@@ -8,7 +8,7 @@ const { getData } = require('./scripts/parser');
 
 const app = express();
 
-app.set('port', process.env.PORT || 5000);
+app.set('port', process.env.PORT);
 app.use('/add', add);
 app.use('/add2', add2);
 app.use('/db', get);

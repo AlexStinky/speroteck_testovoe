@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const { User } = require('../models/User');
 
-const DB_CONN = process.env.DB_CONN || 'mongodb://localhost:27017/Speroteck_db';
+const DB_CONN = process.env.DB_CONN;
 
 mongoose.connect(DB_CONN, {
     useUnifiedTopology: true,

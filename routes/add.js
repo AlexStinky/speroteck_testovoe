@@ -12,7 +12,7 @@ add.post('', checker.validate(ageSchema), (req, res) => {
 });
 
 add2.post('', checker.validate(addSchema), async (req, res) => {
-    await db.creator(req.query)
+    await db.creator(req.query);
 
     res.send('Done!');
 });

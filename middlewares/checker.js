@@ -12,9 +12,9 @@ const checker = {
 
                 if (error) {
                     throw query;
-                } else {
-                    next();
                 }
+
+                next();
             } catch (e) {
                 console.log(`[Checker]:`, e);
 
@@ -28,8 +28,6 @@ const checker = {
 
             return acc;
         }, 'List of names:\n');
-
-        console.log(message)
 
         res.send(message);
     }
